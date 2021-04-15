@@ -1,0 +1,27 @@
+.backgroud-image{
+background-image: url('../../assets/undraw_contact_us_15o2.svg');
+background-repeat: no-repeat;
+background-attachment: initial;
+// background-size: auto;
+height:100%;
+width:100%;
+background-position: center;
+background-size: cover;
+}
+
+.add-button{
+  right: 50%;
+  bottom: 70%;
+  left: auto;
+  position: fixed;
+  z-index: 999;
+  font-weight: bold;
+}
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

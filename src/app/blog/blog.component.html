@@ -1,3 +1,9 @@
+<div class="tx">
+  <h1>
+    Latest 30 blog from Dev.to
+  </h1>
+</div>
+
 <div class="flex-container">
   <mat-card (click)="onClick($event)" class="flex-item" *ngFor="let article of devLatestArticle">
     <img mat-card-image src={{article.social_image}} alt="{{article.url}}">
@@ -5,5 +11,10 @@
       <mat-card-title>{{article.title}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>{{article.description}}</mat-card-content>
+    <mat-card-actions>
+      <mat-chip-list>
+        <mat-chip color="primary" selected *ngFor="let chip of article.tag_list">{{chip}}</mat-chip>
+      </mat-chip-list>
+    </mat-card-actions>
   </mat-card>
 </div>

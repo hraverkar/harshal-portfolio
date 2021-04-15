@@ -1,4 +1,4 @@
-import { BlogModel } from './../blog-model';
+import { BlogModel } from '../blog-model';
 import { Injectable } from '@angular/core';
 import {
   HttpClient,

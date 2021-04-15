@@ -1,5 +1,4 @@
-import { BlogModel } from './../blog-model';
-import { DevService } from './../devBlog/dev.service';
+import { DevService } from '../devBlog-service/dev.service';
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 
@@ -17,7 +16,7 @@ export class BlogComponent implements OnInit {
   }
   public getDevLatestBlog() {
     this._spinner.show();
-    this._devService.getLatestDevArticle().subscribe((res) => {
+    this._devService.getLatestDevArticle().subscribe((res:any) => {
       this.devLatestArticle = res.body;
       this._spinner.hide();
       this.showBlog(this.devLatestArticle);
